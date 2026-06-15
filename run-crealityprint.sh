@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
-APPIMAGE="$(find "$SCRIPT_DIR" -maxdepth 1 -name 'CrealityPrint*.appimage' | sort -V | tail -1)"
+APPIMAGE="$(find "$SCRIPT_DIR" -maxdepth 1 -iname 'CrealityPrint*.appimage' | sort -V | tail -1)"
 EXTRACT_DIR="$SCRIPT_DIR/squashfs-root"
 APPRUN="$EXTRACT_DIR/AppRun"
 
