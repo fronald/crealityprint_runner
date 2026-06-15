@@ -1,0 +1,6 @@
+*.appimage
+squash*
+*.swp*
+*.bkp
+*.idea
+*.iml
